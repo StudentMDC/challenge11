@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  --Dark-cyan: hsl(185, 75%, 39%);
+  --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --Dark-grayish-blue: hsl(227, 10%, 46%);
+  --Dark-gray: hsl(0, 0%, 59%);
+}
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  background-color: var(--Dark-cyan);
+  background-image: url("images/bg-pattern-top.svg"),
+    url("images/bg-pattern-bottom.svg");
+  background-position: -29% -213%, 636% 288%;
+  background-size: 60% 75%, 92% 75%;
+  background-repeat: no-repeat;
+}
+@media (min-width: 445px) {
+  body {
+    background-position: -50% 100%, 150% -60%;
+    background-size: 978px 978px, 978px 978px;
+  }
+}
+.image {
+  background-image: url("images/bg-pattern-card.svg");
+  background-position: center top;
+  width: 100%;
+  height: 100px;
+}
+.card {
+  width: 300px;
+  background-color: white;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 130px;
+}
+.card img {
+  height: 80px;
+  width: 80px;
+  border-radius: 50px;
+  position: absolute;
+  top: 60px;
+  border: 3px solid white;
+}
+.card > h2 {
+  margin-top: 50px;
+  margin-bottom: 0;
+  font-size: 18px;
+  color: var(--Very-dark-desaturated-blue);
+}
+.card > h2 span {
+  color: var(--Dark-grayish-blue);
+  font-weight: 400;
+  font-size: 19px;
+}
+.card > p {
+  color: var(--Dark-grayish-blue);
+  margin-top: 8px;
+  margin-bottom: 25px;
+}
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.flex-col h3 {
+  margin-top: 15px;
+  margin-bottom: 0;
+  color: var(--Very-dark-desaturated-blue);
+  font-size: 18px;
+}
+.flex-col p {
+  margin-top: 0;
+  margin-bottom: 25px;
+  color: var(--Dark-gray);
+  font-weight: 400;
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+.flex {
+  border-top: 0.5px solid var(--Dark-gray);
+  width: 100%;
+  padding: 10px 25px 5px;
+  display: flex;
+  gap: 40px;
+  justify-content: space-around;
+  align-items: center;
+}
